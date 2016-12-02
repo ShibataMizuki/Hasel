@@ -47,8 +47,10 @@ hasel::cs2dには2D衝突判定に関するプログラムが含まれていま�
 </ul>
 
 ## Example
-以下のように記述することで、コンソールに"HIT!"と表示させることができます
+以下のコードは、円形状を持つ2つの剛体を同じ位置に出現させ、衝突判定を行うものです。
+実行するとコンソールに"HIT!"と表示されます。
 <code>
+
 	const int Ally = 1;
 	const int Enemy = 2;
 
@@ -57,7 +59,7 @@ hasel::cs2dには2D衝突判定に関するプログラムが含まれていま�
 	auto bodyA = RigidBodyBuilder()
 		.addAttribute(Ally)
 		.addShape(CircleBuilder(10.f).buildRaw())
-		.setPosition(Vector2(40.f, 0.f))
+		.setPosition(Vector2(0.f, 0.f))
 		.buildUnique();
 
 	auto bodyB = RigidBodyBuilder()
