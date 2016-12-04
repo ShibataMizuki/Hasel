@@ -1,7 +1,7 @@
 #pragma once
 
 #include<memory>
-#include"Hasel/memory/UniquePtrObserver/UniquePtrObserver.h"
+#include"memory/UniquePtrObserver/UniquePtrObserver.h"
 
 namespace hasel
 {

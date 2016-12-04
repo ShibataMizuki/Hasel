@@ -1,6 +1,6 @@
 #pragma once
 
-#include"Hasel/Math/MathInc.h"
+#include"../Hasel/Math/MathInc.h"
 
 namespace hasel
 {

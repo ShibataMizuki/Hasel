@@ -1,7 +1,7 @@
 #include"CollisionHelper.h"
 
-#include"Hasel/Math/MathInc.h"
-#include"Hasel/Shape/ShapeInc.h"
+#include"../Hasel/Math/MathInc.h"
+#include"../Hasel/Shape/ShapeInc.h"
 
 using namespace hasel;
 using namespace hasel::math;

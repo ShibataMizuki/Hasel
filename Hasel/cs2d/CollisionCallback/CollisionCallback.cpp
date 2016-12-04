@@ -1,6 +1,6 @@
 #include "CollisionCallback.h"
 
-#include"Hasel/Hasel.h"
+#include"../Hasel/Hasel.h"
 
 using namespace std;
 using namespace hasel;

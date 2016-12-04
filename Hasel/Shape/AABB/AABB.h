@@ -1,6 +1,6 @@
 #pragma once
 
-#include"Hasel/Math/Vector2/Vector2.h"
+#include"../Hasel/Math/Vector2/Vector2.h"
 
 namespace hasel
 {

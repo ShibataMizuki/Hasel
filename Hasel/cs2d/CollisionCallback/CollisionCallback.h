@@ -1,6 +1,6 @@
 #pragma once
 
-#include"Hasel/HaselAlias.h"
+#include"../Hasel/HaselAlias.h"
 
 #include<functional>
 #include<vector>

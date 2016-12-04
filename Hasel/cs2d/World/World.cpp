@@ -1,6 +1,6 @@
 #include "World.h"
 
-#include"Hasel/Hasel.h"
+#include"../Hasel/Hasel.h"
 
 using namespace std;
 
@@ -60,6 +60,17 @@ uwptr<RigidBody> hasel::cs2d::World::addRigidBody(uptr<RigidBody>&& rigidBody)
 		m_groupedRigidBodies[attribute].push_back(result);
 
 	return result;
+}
+
+uwptr<RigidBody> hasel::cs2d::World::createRigidBody(const RigidBodyBuilder & builder)
+{
+	m_rigidBodyies.push_back(move(builder.buildUnique()));
+	auto weak = uwptr<RigidBody>(m_rigidBodyies.back());
+
+	auto& attributes = weak.lock()->getAttibutes();
+	for (auto attribute : attributes)
+		m_groupedRigidBodies[attribute].push_back(weak);
+	return weak;
 }
 
 void hasel::cs2d::World::removeRigidBody(const uwptr<RigidBody>& target)

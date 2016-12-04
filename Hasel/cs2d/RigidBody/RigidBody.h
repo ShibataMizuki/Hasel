@@ -1,7 +1,7 @@
 #pragma once
-#include"Hasel/HaselAlias.h"
-#include"Hasel/Math/MathInc.h"
-#include"Hasel/Shape/AABB/AABB.h"
+#include"../Hasel/HaselAlias.h"
+#include"../Hasel/Math/MathInc.h"
+#include"../Hasel/Shape/AABB/AABB.h"
 
 #include<memory>
 #include<vector>
@@ -100,19 +100,19 @@ namespace hasel
 			@brief インスタンス作成関数(shared)
 			@return sptr<RigidBody> 作成された剛体
 			*/
-			sptr<RigidBody> buildShared();
+			sptr<RigidBody> buildShared()const;
 
 			/**
 			@brief インスタンス作成関数(unique)
 			@return uptr<RigidBody> 作成された剛体
 			*/
-			uptr<RigidBody> buildUnique();
+			uptr<RigidBody> buildUnique()const;
 
 			/**
 			@brief インスタンス作成関数(raw)
 			@return RigidBody* 作成された剛体
 			*/
-			RigidBody* buildRaw();
+			RigidBody* buildRaw()const;
 		};
 
 		/**

@@ -1,8 +1,8 @@
 #pragma once
 
-#include"Hasel/Shape/Shape.h"
-#include"Hasel/HaselAlias.h"
-#include"Hasel/Math/MathInc.h"
+#include"../Hasel/Shape/Shape.h"
+#include"../Hasel/HaselAlias.h"
+#include"../Hasel/Math/MathInc.h"
 
 #include<memory>
 

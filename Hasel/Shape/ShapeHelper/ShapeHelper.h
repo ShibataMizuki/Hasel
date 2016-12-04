@@ -1,9 +1,9 @@
 #pragma once
 
-#include"Hasel/HaselAlias.h"
-#include"Hasel/Math/MathInc.h"
-#include"Hasel/Shape/AABB/AABB.h"
-#include"hasel/Shape/Shape.h"
+#include"../Hasel/HaselAlias.h"
+#include"../Hasel/Math/MathInc.h"
+#include"../Hasel/Shape/AABB/AABB.h"
+#include"../hasel/Shape/Shape.h"
 
 #include<algorithm>
 #include<vector>

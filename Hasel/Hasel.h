@@ -1,7 +1,7 @@
 #pragma once
 
-#include"hasel/HaselAlias.h"
-#include"hasel/algo/AlgorithmInc.h"
-#include"hasel/Math/MathInc.h"
-#include"Hasel/Shape/ShapeInc.h"
-#include"hasel/cs2d/CollisionSystem2DInc.h"
+#include"HaselAlias.h"
+#include"algo/AlgorithmInc.h"
+#include"Math/MathInc.h"
+#include"Shape/ShapeInc.h"
+#include"cs2d/CollisionSystem2DInc.h"

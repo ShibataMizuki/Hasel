@@ -1,6 +1,6 @@
 #include "RigidBody.h"
 
-#include"Hasel/Hasel.h"
+#include"../Hasel/Hasel.h"
 #include<algorithm>
 
 using namespace hasel;
@@ -38,17 +38,17 @@ RigidBodyBuilder& RigidBodyBuilder::setUserdata(void * userdata)
 	return *this;
 }
 
-sptr<RigidBody> RigidBodyBuilder::buildShared()
+sptr<RigidBody> RigidBodyBuilder::buildShared()const
 {
 	return move(make_shared<RigidBody>(*this));
 }
 
-uptr<RigidBody> hasel::cs2d::RigidBodyBuilder::buildUnique()
+uptr<RigidBody> hasel::cs2d::RigidBodyBuilder::buildUnique()const
 {
 	return move(make_unique<RigidBody>(*this));
 }
 
-RigidBody * RigidBodyBuilder::buildRaw()
+RigidBody * RigidBodyBuilder::buildRaw()const
 {
 	return new RigidBody(*this);
 }

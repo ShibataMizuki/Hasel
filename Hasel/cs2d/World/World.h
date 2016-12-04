@@ -1,7 +1,7 @@
 #pragma once
 
-#include"Hasel/Math/MathInc.h"
-#include"Hasel/HaselAlias.h"
+#include"../Hasel/Math/MathInc.h"
+#include"../Hasel/HaselAlias.h"
 
 #include<map>
 #include<list>
@@ -17,6 +17,7 @@ namespace hasel
 	{
 		class RigidBody;
 		class CollisionCallback;
+		class RigidBodyBuilder;
 
 		/**
 		@brief Worldのビルダー
@@ -77,6 +78,13 @@ namespace hasel
 			@note 剛体の所有権はWorldが持つ
 			*/
 			uwptr<RigidBody> addRigidBody(uptr<RigidBody>&& rigidBody);
+
+			/**
+			@brief 剛体を作成する
+			@param builder 剛体のビルダー
+			@return unique_ptr用弱参照クラス
+			*/
+			uwptr<RigidBody> createRigidBody(const RigidBodyBuilder& builder);
 
 			/**
 			@brief 剛体を削除する
